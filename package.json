@@ -1,0 +1,38 @@
+{
+    "name": "humanui-snippets",
+    "displayName": "humanui-snippets",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "ethanyou",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+		"Vue",
+		"Vue 2",
+		"vue-human Snippets"
+    ],
+    "extensionDependencies": [
+		"octref.vetur"
+	],
+    "contributes": {
+        "snippets": [
+            
+            {
+				"language": "javascript",
+				"path": "./snippets/vue-javascript.json"
+			},
+            {
+                "language": "vue",
+                "path": "./snippets/vue-snippets.json"
+            },
+            {
+				"language": "html",
+				"path": "./snippets/vue-template.json"
+			}
+        ]
+    }
+}

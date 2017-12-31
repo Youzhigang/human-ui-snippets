@@ -1,0 +1,23 @@
+{
+	"Vue base File Component": {
+		"prefix": "vhbase",
+		"body": [
+			"<template>",
+			"\t<${1:mn-scroller}>",
+			"",
+			"\t</${1:mn-scroller}>",
+			"</template>",
+			"",
+			"<script>",
+      "\texport default {",
+			"\t\t${0}",
+			"\t}",
+			"</script>",
+			"",
+			"<style lang='scss' scoped>",
+			"",
+			"</style>"
+		],
+		"description": "Base for Vue File"
+	}
+}
