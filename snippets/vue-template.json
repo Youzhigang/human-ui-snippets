@@ -1,1 +1,27 @@
-{}
+{
+  "vue human input" : {
+    "prefix": "mninput",
+    "body": [
+      "<mn-input ${1:v-model}=\"${2:data}\" palceholder=\"${3:}\"></mn-input>"
+    ],
+    "description": "Vue Human input"
+  },
+  "vue human button" : {
+    "prefix": "mnbtn",
+    "body": [
+      "<mn-btn theme=\"${1:primary}\" size=\"${2:sm}\"", 
+      "\t@click=\"${4:}\">${3:Button}</mn-btn>"
+    ],
+    "description": "Vue Human Button"
+  },
+  "vue human textarea" : {
+    "prefix": "mntextarea",
+    "body": [
+      "<mn-textarea rows=\"${1:3}\"", 
+      "\t${2:v-model}=\"${3:data}\"", 
+      "\tpalceholder=\"${4:}\"",
+      "></mn-textarea>"
+    ],
+    "description": "Vue Human Textarea"
+  }
+}

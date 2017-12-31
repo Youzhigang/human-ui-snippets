@@ -1,1 +1,23 @@
-{}
+{
+  "human import input" : {
+    "prefix": "impinput",
+    "body": [
+      "import input from 'vue-human/suites/input'"
+    ],
+    "description": "import vue-human input"
+  },
+  "human import button" : {
+    "prefix": "impbtn",
+    "body": [
+      "import button from 'vue-human/suites/button'"
+    ],
+    "description": "import vue-human button"
+  },
+  "human import textarea" : {
+    "prefix": "imptextarea",
+    "body": [
+      "import textarea from 'vue-human/suites/textarea'"
+    ],
+    "description": "import vue-human textarea"
+  }
+}
