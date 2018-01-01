@@ -2,22 +2,99 @@
   "human import input" : {
     "prefix": "impinput",
     "body": [
-      "import input from 'vue-human/suites/input'"
+      "import input from 'vue-human/suites/input'",
+      "$1"
     ],
     "description": "import vue-human input"
+  },
+  "human import search bar": {
+    "prefix": "impsearch",
+    "body": [
+      "import searchBar from 'vue-human/suites/searchBar'",
+      "$1"
+    ],
+    "description": "import vue-human search bar"
   },
   "human import button" : {
     "prefix": "impbtn",
     "body": [
-      "import button from 'vue-human/suites/button'"
+      "import button from 'vue-human/suites/button'",
+      "$1"
     ],
     "description": "import vue-human button"
   },
   "human import textarea" : {
     "prefix": "imptextarea",
     "body": [
-      "import textarea from 'vue-human/suites/textarea'"
+      "import textarea from 'vue-human/suites/textarea'",
+      "$1"
     ],
     "description": "import vue-human textarea"
+  },
+  "human import assistivebar": {
+    "prefix": "impassistivebar",
+    "body": [
+      "import assistiveBar from 'vue-human/suites/assistiveBar'",
+      "$1"
+    ],
+    "description": "import human assistivebar"
+  },
+  "human import actionsheet": {
+    "prefix": "impactionsheet",
+    "body": [
+      "import actionSheet from 'vue-human/suites/actionSheet'",
+      "$1"
+    ],
+    "description": "import human actionSheet"
+  },
+  "human import alert": {
+    "prefix": "impalert",
+    "body": [
+      "import Alert from 'vue-human/utils/Alert'",
+      "$1"
+    ],
+    "description": "import human alert"
+  },
+  "human alert show": {
+    "prefix": "mnalertshow",
+    "body": [
+      "Alert.create().show()"
+    ],
+    "description": "import human alert"
+  },
+  "human import message": {
+    "prefix": "impmessage",
+    "body": [
+      "import Message from 'vue-human/utils/Message'",
+      "$1"
+    ],
+    "description": "import human message"
+  },
+  "human import cell": {
+    "prefix": "impcell",
+    "body": [
+      "import cell from 'vue-human/suites/cell'",
+      "$1"
+    ],
+    "description": "import human cell"
+  },
+  "human message show": {
+    "prefix": "mnmsgshow",
+    "body": [
+      "Message.create({",
+      "\tmessage:'${1:message}',",
+      "\ttheme:'${2:primary}',",
+      "\tduration: 3000",
+      "}).show()"
+    ],
+    "description": "import human message"
+  },
+  "human carousel": {
+    "prefix": "mncarousel",
+    "body":[
+      "import carousel from 'vue-human/suites/carousel'"
+    ],
+    "description": "import human carousel"
   }
+
 }

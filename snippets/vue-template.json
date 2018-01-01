@@ -1,13 +1,13 @@
 {
   "vue human input" : {
-    "prefix": "mninput",
+    "prefix": "mn-input",
     "body": [
       "<mn-input ${1:v-model}=\"${2:data}\" palceholder=\"${3:}\"></mn-input>"
     ],
     "description": "Vue Human input"
   },
   "vue human button" : {
-    "prefix": "mnbtn",
+    "prefix": "mn-btn",
     "body": [
       "<mn-btn theme=\"${1:primary}\" size=\"${2:sm}\"", 
       "\t@click=\"${4:}\">${3:Button}</mn-btn>"
@@ -15,7 +15,7 @@
     "description": "Vue Human Button"
   },
   "vue human textarea" : {
-    "prefix": "mntextarea",
+    "prefix": "mn-textarea",
     "body": [
       "<mn-textarea rows=\"${1:3}\"", 
       "\t${2:v-model}=\"${3:data}\"", 
@@ -23,5 +23,102 @@
       "></mn-textarea>"
     ],
     "description": "Vue Human Textarea"
+  },
+  "vue human columns" : {
+    "prefix": "mn-cols",
+    "body": [
+      "<mn-columns>", 
+      "\t$1",
+      "</mn-columns>"
+    ],
+    "description": "Vue Human columns"
+  },
+  "vue human column" : {
+    "prefix": "mn-col",
+    "body": [
+      "<mn-column ${1: desktop}=${2:\"6\"}>", 
+      "\t$3",
+      "</mn-column>"
+    ],
+    "description": "Vue Human column"
+  },
+  "vue human searchbar" : {
+    "prefix": "mn-search",
+    "body": [
+      "<mn-search-bar>", 
+      "\t<mn-input ${1:v-model}=\"${2:data}\" palceholder=\"${3:}\"></mn-input>",
+      "</mn-search-bar>"
+    ],
+    "description": "Vue Human SearchBar"
+  },
+  "vue human section" : {
+    "prefix": "mn-section",
+    "body": [
+      "<mn-section>", 
+      "\t$1",
+      "</mn-section>"
+    ],
+    "description": "Vue Human Section"
+  },
+  "vue human assistivebar": {
+    "prefix": "mn-assistivebar",
+    "body":[
+      "<mn-assistive-bar slot=\"footer\" :show.sync=\"${1:showSidebar}\"></mn-assistive-bar>"
+    ]
+  },
+  "vue human card" : {
+    "prefix": "mn-card",
+    "body": [
+      "<mn-card>", 
+      "\t$1",
+      "</mn-card>"
+    ],
+    "description": "Vue Human card"
+  },
+  "vue human card-item" : {
+    "prefix": "mn-card-item",
+    "body": [
+      "<mn-card-item>", 
+      "\t$1",
+      "</mn-card-item>"
+    ],
+    "description": "Vue Human card-item"
+  },
+  "vue human card-body" : {
+    "prefix": "mn-card-body",
+    "body": [
+      "<mn-card-body>", 
+      "\t$1",
+      "</mn-card-body>"
+    ],
+    "description": "Vue Human card-body"
+  },
+  "vue human card-prefix" : {
+    "prefix": "mn-card-prefix",
+    "body": [
+      "<mn-card-prefix>", 
+      "\t$1",
+      "</mn-card-prefix>"
+    ],
+    "description": "Vue Human card-prefix"
+  },
+  "vue human action sheet" : {
+    "prefix": "mn-action-sheet",
+    "body": [
+      "<mn-action-sheet :visible.sync=\"${1:showActionSheet}\">", 
+      "\t$2",
+      "</mn-action-sheet>"
+    ],
+    "description": "Vue Human action"
+  },
+  "vue human carousel": {
+    "prefix": "mn-carousel",
+    "body":[
+      "<mn-carousel ref=\"${1:carousel}\">",
+      "\t<mn-carousel-item v-for=\"${2:item} in pictures\" :key=\"${2:item}\">",
+      "\t\t<img :src=\"${2:item}.src\" style=\"width: 100%; display: block;\">",
+      "\t</mn-carousel-item>",
+      "</mn-carousel>"
+    ]
   }
 }
