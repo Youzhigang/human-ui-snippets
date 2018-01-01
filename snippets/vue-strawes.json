@@ -1,0 +1,90 @@
+{
+  "strawes crubm": {
+    "prefix": "mw-crumb",
+    "body": [
+      "<mw-crumb></mw-crumb>"
+    ],
+    "description": "stawes crumb"
+  },
+  "strawes alert bar": {
+    "prefix": "mw-alert-bar",
+    "body": [
+      "<mw-alert-bar>$1</mw-alert-bar>"
+    ],
+    "description": "stawes alert bar"
+  },
+  "stawes table group": {
+    "prefix": "mw-table-group",
+    "body": [
+      "<mw-table-group>",
+      "\t<template slot=\"action\"></template>",
+      "\t<mw-table",
+      "\t:items=\"$1\"",
+      "\t:columns=\"${2:cols}\"",
+      ">",
+      "</mw-table>",
+      "$3",
+      "</mw-table-group>"
+    ]
+  },
+  "strawes table slot page":{
+    "prefix": "mwpageslot",
+    "body":[
+      "<template slot=\"paginate\">",
+      "\t<mw-paginate :totalPages=\"totalPage\" :currentPage=\"models.page\"></mw-paginate>",
+      "</template>"
+    ]
+  },
+  "strawes table slot view":{
+    "prefix": "mwviewslot",
+    "body":[
+      "<template slot=\"view\">",
+      "\t<mw-limit :limit=\"${1:models.size}\" limitName=\"${2:size}\" :limitOptions=\"${3:[10, 20, 50]}\"></mw-limit>",
+      "</template>"
+    ]
+  },
+  "strawes table slot actiom":{
+    "prefix": "mwactionslot",
+    "body":[
+      "<template slot=\"action\">",
+      "\t$1",
+      "</template>"
+    ]
+  },
+  "strawes table tool":{
+    "prefix": "mw-table-tool",
+    "body":[
+      "<mw-table-tool>",
+      "\t$1",
+      "<mw-table-tool>"
+    ]
+  },
+  "strawes table filter":{
+    "prefix": "mw-table-tool",
+    "body":[
+      "<mw-table-filter>",
+      "\t$1",
+      "<mw-table-filter>"
+    ]
+  },
+  "strawes frame": {
+    "prefix": "mw-frame",
+    "body": [
+      "<mw-frame :showMobileSide.sync=\"${1:showMobileSide}\">",
+      "\t<mw-brand slot=\"brand\">",
+      "$4",
+      "\t</mw-brand>",
+      "\t<mw-navigation slot=\"navigation\">",
+      "\t\t<mw-menu :list=\"${2:localMenu}\"></mw-menu>",
+      "\t</mw-navigation>",
+      "\t<div slot=\"information\">",
+      "\t\t<mw-profile label=\"${3:displayname}\"></mw-profile>",
+      "\t</div>",
+      "\t<router-view slot=\"contents\"></router-view>",
+      "\t<mn-assistive-bar slot=\"footer\" :show.sync=\"${1:showMobileSide}\"></mn-assistive-bar>",
+      "</mw-frame>",
+      "$0"
+    ],
+    "description": "strawes mw-frame"
+  }
+}

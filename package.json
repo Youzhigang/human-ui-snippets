@@ -24,6 +24,10 @@
             {
 				"language": "vue-html",
 				"path": "./snippets/vue-template.json"
+            },
+            {
+				"language": "vue-html",
+				"path": "./snippets/vue-strawes.json"
 			},
             {
 				"language": "vue",
@@ -33,6 +37,10 @@
 				"language": "html",
 				"path": "./snippets/vue-template.json"
             },
+            {
+				"language": "html",
+				"path": "./snippets/vue-strawes.json"
+			},
             {
 				"language": "javascript",
 				"path": "./snippets/vue-javascript.json"
