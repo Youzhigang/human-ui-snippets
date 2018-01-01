@@ -150,7 +150,25 @@
     "body": [
       "import counter from 'vue-human/suites/counter'",
       "$1"
+    ],
+    "description": "import human counter"
+  },
+  "human datetime layer show": {
+    "prefix": "mndateshow",
+    "body": [
+      "Datetime.create({",
+      "\tdefault: ${1:this.models.time},",
+      "\tshowDate: ${2:false}",
+      "}).show().on('confirm', time => {",
+      "\t${3:this.models.time} = time",
+      "})"
     ]
+  },
+  "human loadingMask show": {
+    "prefix": "mnloadmaskshow",
+    "body":[
+      "LoadingMask.create().show()"
+    ],
+    "description": "vue-human loading show"
   }
-
 }

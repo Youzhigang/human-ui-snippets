@@ -138,7 +138,7 @@
       "\t</mn-carousel-item>",
       "</mn-carousel>"
     ],
-    "description": "Vue Human Checkbox"
+    "description": "Vue Human Carousel"
   },
   "vue human check Vertical List": {
     "prefix": "mn-check-item",
@@ -149,7 +149,8 @@
       "\t${4:v-model}=\"${5:models}\"",
       "$6",
       "<mn-check-item>"
-    ]
+    ],
+    "description": "Vue Human Checkbox Item"
   },
   "vue human check Horizon List": {
     "prefix": "mn-check",
@@ -159,7 +160,8 @@
       "\t:data=\"${3:option.value}\"",
       "\t${4:v-model}=\"${5:models}\"",
       ":key=\"index\">{{ ${6:option.label} }}</mn-check>"
-    ]
+    ],
+    "description": "Vue Human Checkbox"
   },
   "vue human check tag": {
     "prefix": "mn-check-tag",
@@ -169,6 +171,88 @@
       "\t:data=\"${3:option.value}\"",
       "\t${4:v-model}=\"${5:models}\"",
       ":key=\"index\">{{ ${6:option.label} }}</mn-check-tag>"
+    ],
+    "description": "Vue Human Checkbox Tag"
+  },
+  "vue human datetime picker": {
+    "prefix": "mn-date-picker",
+    "body": [
+      "<mn-datetime-picker :display=\"${1:models}\" @openPicker=\"${2:onOpenPicker}\"></mn-datetime-picker>"
+    ],
+    "description": "Vue Human DateTime Picker"
+  },
+  "vue human helper": {
+    "prefix": "mn-helper",
+    "body":[
+      "<mn-helper :validate=\"$$v$1\">",
+      "\t$2",
+      "</mn-hepler>"
+    ],
+    "description": "Vue Human helper"
+  },
+  "vue human helper item": {
+    "prefix": "mn-helper-item",
+    "body": [
+      "<mn-helper-item :name=\"${1:required}\">",
+      "\t${2: tips}",
+      "</mn-helper-item>"
+    ],
+    "description": "Vue Human helper item"
+  },
+  "vue human form": {
+    "prefix": "mn-form",
+    "body": [
+      "<mn-form :validate=\"$$v$1\" @success=\"${2:success}\" >",
+      "\t",
+      "</mn-form>"
+    ],
+    "description": "Vue Human form"
+  },
+  "vue human icon": {
+    "prefix": "mn-icon",
+    "body":[
+      "<mn-icon :name=\"${1:icons.contact}\" :loading=\"false\"></mn-icon>$2"
+    ],
+    "description": "Vue Human Icon"
+  },
+  "vue human image": {
+    "prefix": "mn-image",
+    "body":[
+      "<mn-image", 
+      "\t:ratio=\"1\"",
+      "\tsource=\"${1:source}\"",
+      "\tthumb=\"${2:thumb}\">",
+      "</mn-image>"
+    ],
+    "description": "Vue Human Images"
+  },
+  "vue human modal": {
+    "prefix": "mn-modal",
+    "body":[
+      "<mn-modal :visible.sync=\"${1:showModal}\">",
+      "\t$2",
+      "</mn-modal>"
     ]
+  },
+  "vue human select": {
+    "prefix": "mn-select",
+    "body": [
+      "<mn-select :options=\"${1:Options}\" ${2:v-model}=\"${3:models.data}\"></mn-select>"
+    ],
+    "description": "Vue Human Select"
+  },
+  "vue human tag": {
+    "prefix": "mn-tag",
+    "body":[
+      "<mn-tag name=\"${1: green}\">$2</mn-tag>"
+    ]
+  },
+  "vue human turn": {
+    "prefix": "mn-turn",
+    "body":[
+      "<mn-turn data=\"${1:data}\" v-model=\"${2:models}\"></mn-turn>"
+    ],
+    "description": "Vue Human Turn"
   }
+  
 }
