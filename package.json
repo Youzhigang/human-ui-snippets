@@ -2,6 +2,7 @@
     "name": "humanui-snippets",
     "displayName": "humanui-snippets",
     "description": "",
+    "icon": "images/vue-human.jpg",
     "version": "0.0.1",
     "publisher": "ethanyou",
     "engines": {
