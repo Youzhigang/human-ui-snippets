@@ -190,15 +190,6 @@
     ],
     "description": "Vue Human helper"
   },
-  "vue human helper item": {
-    "prefix": "mn-helper-item",
-    "body": [
-      "<mn-helper-item :name=\"${1:required}\">",
-      "\t${2: tips}",
-      "</mn-helper-item>"
-    ],
-    "description": "Vue Human helper item"
-  },
   "vue human form": {
     "prefix": "mn-form",
     "body": [
@@ -207,6 +198,15 @@
       "</mn-form>"
     ],
     "description": "Vue Human form"
+  },
+  "vue human helper item": {
+    "prefix": "mn-helper-item",
+    "body": [
+      "<mn-helper-item :name=\"${1:required}\">",
+      "\t${2: tips}",
+      "</mn-helper-item>"
+    ],
+    "description": "Vue Human helper item"
   },
   "vue human icon": {
     "prefix": "mn-icon",
