@@ -1,4 +1,27 @@
 {
+  "human import component from suites": {
+    "prefix": "impst",
+    "body": [
+      "import ${1:suite} from 'vue-human/suites/${1:suite}'",
+      "$2"
+    ],
+    "description": "import human component from suites"
+  },
+  "human import fn from utils": {
+    "prefix": "imputl",
+    "body": [
+      "import ${1:Function} from 'vue-human/utils/${1:Function}'",
+      "$2"
+    ],
+    "description": "import human function from utils"
+  },
+  "human import icons": {
+    "prefix": "impicon",
+    "body": [
+      "import ${1:icon} from 'vue-human-icons/js/${2:ios}/${1:icon}'",
+      "$3"
+    ]
+  },
   "human import input" : {
     "prefix": "impinput",
     "body": [
@@ -58,7 +81,9 @@
   "human alert show": {
     "prefix": "mnalertshow",
     "body": [
-      "Alert.create().show()"
+      "Alert.create({",
+      "\ttitle: {$1:'警告'}",
+      "}).show()"
     ],
     "description": "import human alert"
   },
@@ -90,11 +115,42 @@
     "description": "import human message"
   },
   "human carousel": {
-    "prefix": "mncarousel",
+    "prefix": "impcarousel",
     "body":[
-      "import carousel from 'vue-human/suites/carousel'"
+      "import carousel from 'vue-human/suites/carousel'",
+      "$1"
     ],
     "description": "import human carousel"
+  },
+  "human check": {
+    "prefix": "impcheck",
+    "body":[
+      "import carousel from 'vue-human/suites/check'",
+      "$1"
+    ],
+    "description": "import human check"
+  },
+  "human confirm": {
+    "prefix": "impconfirm",
+    "body":[
+      "import Confirm from 'vue-human/utils/Confirm'",
+      "$1"
+    ],
+    "description": "import human confirm"
+  },
+  "human confirm show": {
+    "prefix": "mnconfirmshow",
+    "body": [
+      "Confirm.create({$1}).show()"
+    ],
+    "description": "human confirm show"
+  },
+  "human import counter": {
+    "prefix": "impcounter",
+    "body": [
+      "import counter from 'vue-human/suites/counter'",
+      "$1"
+    ]
   }
 
 }
