@@ -60,6 +60,15 @@
     ],
     "description": "Vue Human Section"
   },
+  "vue human section note" : {
+    "prefix": "mn-sectionnote",
+    "body": [
+      "<mn-section-note>", 
+      "\t$1",
+      "</mn-section-note>"
+    ],
+    "description": "Vue Human Section"
+  },
   "vue human assistivebar": {
     "prefix": "mn-assistivebar",
     "body":[
@@ -102,6 +111,15 @@
     ],
     "description": "Vue Human card-prefix"
   },
+  "vue human card-suffix" : {
+    "prefix": "mn-card-suffix",
+    "body": [
+      "<mn-card-suffix>", 
+      "\t$1",
+      "</mn-card-suffix>"
+    ],
+    "description": "Vue Human card-prefix"
+  },
   "vue human action sheet" : {
     "prefix": "mn-action-sheet",
     "body": [
@@ -119,6 +137,38 @@
       "\t\t<img :src=\"${2:item}.src\" style=\"width: 100%; display: block;\">",
       "\t</mn-carousel-item>",
       "</mn-carousel>"
+    ],
+    "description": "Vue Human Checkbox"
+  },
+  "vue human check Vertical List": {
+    "prefix": "mn-check-item",
+    "body":[
+      "<mn-check-item",
+      "\tv-for=\"(${1:option}, index) in ${2:likeOptions}\" :key=\"index\">",
+      "\t:data=\"${3:option.value}\"",
+      "\t${4:v-model}=\"${5:models}\"",
+      "$6",
+      "<mn-check-item>"
+    ]
+  },
+  "vue human check Horizon List": {
+    "prefix": "mn-check",
+    "body":[
+      "<mn-check", 
+      "\tv-for=\"(${1:option}, index) in ${2:likeOptions}\"",
+      "\t:data=\"${3:option.value}\"",
+      "\t${4:v-model}=\"${5:models}\"",
+      ":key=\"index\">{{ ${6:option.label} }}</mn-check>"
+    ]
+  },
+  "vue human check tag": {
+    "prefix": "mn-check-tag",
+    "body":[
+      "<mn-check-tag", 
+      "\tv-for=\"(${1:option}, index) in ${2:likeOptions}\"",
+      "\t:data=\"${3:option.value}\"",
+      "\t${4:v-model}=\"${5:models}\"",
+      ":key=\"index\">{{ ${6:option.label} }}</mn-check-tag>"
     ]
   }
 }
